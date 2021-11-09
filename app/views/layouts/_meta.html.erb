@@ -1,0 +1,15 @@
+<code>
+  <% snippet = capture do %>
+    <%= canonical_url_tag %>
+  <% end %>
+  <%= escape_once snippet %>
+  <br>
+
+  <% hreflang_tags.split(">").each do |tag| %>
+    <% snippet = capture do %>
+      <%= tag %>>
+    <% end %>
+    <%= escape_once snippet %>
+    <br>
+  <% end %>
+</code>

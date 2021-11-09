@@ -1,6 +1,6 @@
 <select id="locale-picker">
   <% I18n.available_locales.each do |locale| %>
-    <option value="<%= current_path_in_locale(locale, params) %>" <%= "selected" if I18n.locale == locale %>>
+    <option value="<%= current_path_in_locale(locale) %>" <%= "selected" if I18n.locale == locale %>>
       <%= I18n.t("locales.#{locale}") %>
     </option>
   <% end %>

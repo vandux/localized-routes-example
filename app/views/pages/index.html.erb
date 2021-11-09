@@ -3,7 +3,7 @@
 <p>Current Locale: <%= I18n.locale %></p>
 <p>Current Path in Each Locale: 
   <% I18n.available_locales.each do |locale| %>
-    <%= link_to current_path_in_locale(locale, params), current_path_in_locale(locale, params) %>
+    <%= link_to current_path_in_locale(locale), current_path_in_locale(locale) %>
   <% end %>
 </p>
 

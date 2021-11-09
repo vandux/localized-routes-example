@@ -1,4 +1,5 @@
 es:
   hello: "Hola Mundo"
+  title: "Ruta de prueba"
 es-MX:
   hello: "Hola Mundo viva Mexico"
