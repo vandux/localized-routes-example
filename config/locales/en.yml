@@ -31,3 +31,10 @@
 
 en:
   hello: "Hello world"
+
+  locales:
+    en: "English"
+    es: "Español (España)"
+    es-MX: "Español (LATAM)"
+    fr: "Français"
+    de: "Deutsch"

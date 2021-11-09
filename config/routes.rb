@@ -1,3 +1,7 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  scope "(:locale)", locale: Routes.scoped_locales_regex do
+    get 'test', to: 'pages#test', as: 'test'
+    
+    root to: 'pages#index'
+  end
 end
