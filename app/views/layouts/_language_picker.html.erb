@@ -1,13 +1,17 @@
-<select id="locale-picker">
-  <% I18n.available_locales.each do |locale| %>
-    <option value="<%= current_path_in_locale(locale) %>" <%= "selected" if I18n.locale == locale %>>
-      <%= I18n.t("locales.#{locale}") %>
-    </option>
-  <% end %>
-</select>
+<div style="display: flex; align-items: baseline; margin: 12px 0; ">
+  <p>Switch Locale: </p>
 
-<script>
-document.getElementById("locale-picker").addEventListener("change", (e) => {
-  document.location = e.target.value;
-})
-</script>
+  <select id="locale-picker" style="margin-left: 6px;">
+    <% I18n.available_locales.each do |locale| %>
+      <option value="<%= current_path_in_locale(locale) %>" <%= "selected" if I18n.locale == locale %>>
+        <%= I18n.t("locales.#{locale}") %>
+      </option>
+    <% end %>
+  </select>
+
+  <script>
+  document.getElementById("locale-picker").addEventListener("change", (e) => {
+    document.location = e.target.value;
+  })
+  </script>
+</div>

@@ -1,5 +1,19 @@
 es:
-  hello: "Hola Mundo"
-  title: "Ruta de prueba"
+  pages:
+    root:
+      title: "Hola Mundo"
+      body: "Una demostración rápida de la implementación de la internacionalización en Ruby on Rails."
+    one:
+      title: "Página uno"
+      body: "Un rápido zorro marrón salta sobre el perro perezoso."
+    two:
+      title: "Página dos"
+      body: "Empaque mi caja con cinco docenas de jarras de licor."
+    three:
+      title: "Página tres"
+      body: "Jim rápidamente se dio cuenta de que los hermosos vestidos son caros."
+
 es-MX:
-  hello: "Hola Mundo viva Mexico"
+  pages:
+    root:
+      title: "Hola Mundo viva Mexico"

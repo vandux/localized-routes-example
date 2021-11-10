@@ -1,10 +1,2 @@
-<h1><%= I18n.t("hello") %></h1>
-
-<p>Current Locale: <%= I18n.locale %></p>
-<p>Current Path in Each Locale: 
-  <% I18n.available_locales.each do |locale| %>
-    <%= link_to current_path_in_locale(locale), current_path_in_locale(locale) %>
-  <% end %>
-</p>
-
-<p>Test Path in Current Locale: <%= link_to test_path, test_path %></p>
+<h1><%= I18n.t("pages.root.title") %></h1>
+<p><%= I18n.t("pages.root.body") %></p>

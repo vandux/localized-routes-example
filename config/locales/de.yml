@@ -1,3 +1,14 @@
 de:
-  hello: "Hallo Welt"
-  title: "Teststrecke"
+  pages:
+    root:
+      title: "Hallo Welt"
+      body: "Eine kurze Demo der Internationalisierungsimplementierung in Ruby on Rails."
+    one:
+      title: "Seite eins"
+      body: "Ein schneller brauner Fuchs springt über den faulen Hund."
+    two:
+      title: "Seite zwei"
+      body: "Packe meine Kiste mit fünf Dutzend Schnapskrügen."
+    three:
+      title: "Seite drei"
+      body: "Jim merkte schnell, dass die schönen Kleider teuer sind."

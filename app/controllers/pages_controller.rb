@@ -2,6 +2,12 @@ class PagesController < ApplicationController
   def index
   end
 
-  def test
+  def one
+  end
+
+  def two
+  end
+
+  def three
   end
 end

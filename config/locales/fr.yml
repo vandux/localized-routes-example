@@ -1,3 +1,14 @@
 fr:
-  hello: "Bonjour le monde"
-  title: "Itinéraire de test"
+  pages:
+    root:
+      title: "Bonjour le monde"
+      body: "Une démo rapide de l'implémentation de l'internationalisation dans Ruby on Rails."
+    one:
+      title: "Seite un"
+      body: "Un renard brun rapide saute par-dessus le chien paresseux."
+    two:
+      title: "Seite deux"
+      body: "Emballez ma boîte avec cinq douzaines de cruches d'alcool."
+    three:
+      title: "Seite trois"
+      body: "Jim s'est vite rendu compte que les belles robes sont chères."

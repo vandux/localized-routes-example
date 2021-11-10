@@ -30,8 +30,19 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
-  title: "Testing Route"
+  pages:
+    root:
+      title: "Hello world"
+      body: "A quick demo of internationalization implementation in Ruby on Rails."
+    one:
+      title: "Page One"
+      body: "A quick brown fox jumps over the lazy dog."
+    two:
+      title: "Page Two"
+      body: "Pack my box with five dozen liquor jugs."
+    three:
+      title: "Page Three"
+      body: "Jim quickly realized that the beautiful gowns are expensive."
 
   locales:
     en: "English"
