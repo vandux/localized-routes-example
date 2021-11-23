@@ -9,7 +9,7 @@ module LocalizationHandling
   end
 
   def default_url_options
-    { locale: I18n.locale == :en ? nil : I18n.locale }
+    { locale: I18n.locale == I18n.default_locale ? nil : I18n.locale }
   end
 
   def redirect_to_locale_from_header
@@ -20,7 +20,7 @@ module LocalizationHandling
     logger.debug "* Extracted '#{locale}'"
 
     return unless I18n.available_locales.include?(locale)
-    return if locale == :en
+    return if locale == I18n.default_locale
 
     if locale
       logger.debug "* Redirecting to '#{locale}'"

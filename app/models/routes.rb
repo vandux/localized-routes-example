@@ -1,6 +1,6 @@
 module Routes
   SUPPORTED_LOCALES = I18n.available_locales
-  SCOPED_LOCALES = SUPPORTED_LOCALES - [:en]
+  SCOPED_LOCALES = SUPPORTED_LOCALES - [I18n.default_locale]
   
   def self.supported_locales_regex
     /#{supported_locales_regex_map}/.freeze

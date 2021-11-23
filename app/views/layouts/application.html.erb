@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="<%= I18n.locale %>">
   <head>
     <title>LocalizedRoutesExample</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -10,31 +10,48 @@
 
     <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track": "reload" %>
     <%= javascript_pack_tag "application", "data-turbolinks-track": "reload" %>
+
+    <style>
+      body {
+        font-family: sans-serif;
+      }
+    </style>
   </head>
 
   <body>
 
-    <nav>
-      <ul style="display: flex; list-style: none; margin: 0; padding: 0;">
-        <li style="margin: 0 6px;"><%= link_to root_path, root_path %></li>
-        <li style="margin: 0 6px;"><%= link_to one_path, one_path %></li>
-        <li style="margin: 0 6px;"><%= link_to two_path, two_path %></li>
-        <li style="margin: 0 6px;"><%= link_to three_path, three_path %></li>
-      </ul>
-    </nav>
+    <div style="margin: 0 auto; max-width: 800px;">
 
-    <p>Supported Locales:
-      <% I18n.available_locales.each do |locale| %>
-        <%= locale %>
-      <% end %>
-    </p>
+      <header style="margin-bottom: 32px;">
+        <nav>
+          <ul style="display: flex; list-style: none; margin: 0; padding: 0;">
+            <li style="margin: 0 6px;"><%= link_to root_path, root_path %></li>
+            <li style="margin: 0 6px;"><%= link_to one_path, one_path %></li>
+            <li style="margin: 0 6px;"><%= link_to two_path, two_path %></li>
+            <li style="margin: 0 6px;"><%= link_to three_path, three_path %></li>
+          </ul>
+        </nav>
 
-    <p>Current Locale: <%= I18n.locale %></p>
-    
-    <%= yield %>
+        <p>Locales:
+          <% I18n.available_locales.each do |locale| %>
+            <% if locale == I18n.locale %>
+              <strong><%= locale %></strong>
+            <% else %>
+              <%= locale %>
+            <% end %>
+          <% end %>
+        </p>
+      </header>
+      
+      <main>
+        <%= render partial: "layouts/meta" %>
+        
+        <%= yield %>
+      </main>
 
-    <%= render partial: "layouts/language_picker" %>
-    
-    <%= render partial: "layouts/meta" %>
+      <footer style="display: flex; justify-content: flex-end;">
+        <%= render partial: "layouts/language_picker" %>
+      </footer>
+    </div>
   </body>
 </html>
