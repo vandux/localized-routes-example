@@ -12,11 +12,16 @@ module Routes
 
   private
 
+  def self.reordered_supported_locales
+    # yuck
+    SUPPORTED_LOCALES.select {|l| l.to_s.include?('-')} + SUPPORTED_LOCALES.reject {|l| l.to_s.include?('-')} 
+  end
+
   def self.supported_locales_regex_map
-    SUPPORTED_LOCALES.join("|")
+    reordered_supported_locales.join("|")
   end
   
   def self.scoped_locales_regex_map
-    SCOPED_LOCALES.join("|")
+    (reordered_supported_locales  - [I18n.default_locale]).join("|")
   end
 end

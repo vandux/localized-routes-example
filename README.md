@@ -14,7 +14,6 @@ This application should conform to International SEO best pratices outlined here
 * Language picker
 * `link` tag alternate `hreflang` attributes (https://developers.google.com/search/docs/advanced/crawling/localized-versions)
 * `html` tag `lang` attribute (https://www.w3schools.com/tags/att_global_lang.asp)
-* `meta` tag type `content-language` attributes
 * TODO: `Link` http headers (https://developers.google.com/search/docs/advanced/crawling/localized-versions#http)
 * TODO: rake task to populate sitemap.xml (https://developers.google.com/search/docs/advanced/crawling/localized-versions#sitemap)
 * TODO: database level localization
@@ -59,6 +58,11 @@ Although attribute is [ignored by Google](https://www.woorank.com/en/edu/seo-gui
 
 * The `lang` attribute on the `html` tag should be set appropriately
 * The value should conform to [ISO 639-1 language codes](https://www.w3schools.com/tags/ref_language_codes.asp).
+
+#### Content-Language meta
+Deprecated and will not be included.
+
+* `meta` tag type `content-language` attributes
 
 ## Setup
 Standard Ruby on Rails application with PostgreSQL and Webpacker.
