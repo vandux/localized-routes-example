@@ -6,7 +6,7 @@ module LocalizationHelper
   end
 
   def hreflang_tags
-    links = Routes::SCOPED_LOCALES.map do |locale|
+    links = LocalesScope::SCOPED_LOCALES.map do |locale|
       tag.link(rel: "alternate", hreflang: locale.to_s.downcase, href: current_path_in_locale(locale, only_path: false))
     end
 

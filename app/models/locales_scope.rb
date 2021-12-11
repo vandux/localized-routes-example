@@ -1,4 +1,4 @@
-module Routes
+module LocalesScope
   SUPPORTED_LOCALES = I18n.available_locales
   SCOPED_LOCALES = SUPPORTED_LOCALES - [I18n.default_locale]
   
