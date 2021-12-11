@@ -46,7 +46,10 @@ en:
 
   locales:
     en: "English"
-    es: "Español (España)"
     es-MX: "Español (LATAM)"
     fr: "Français"
     de: "Deutsch"
+    ja: "日本語"
+    ko: "한국어"
+    pt-BR: "Português (Brasil)"
+    zh-CN: "中文（简体）"

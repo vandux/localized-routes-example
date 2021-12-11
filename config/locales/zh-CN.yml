@@ -1,0 +1,14 @@
+zh-CN:
+  pages:
+    root:
+      title: "你好，世界"
+      body: "Ruby on Rails 国际化实现的快速演示。"
+    one:
+      title: "第一页"
+      body: "一只敏捷的棕色狐狸跳过了懒惰的狗。"
+    two:
+      title: "第二页"
+      body: "用五打酒壶装好我的盒子。"
+    three:
+      title: "第三页"
+      body: "吉姆很快意识到漂亮的礼服很贵。"

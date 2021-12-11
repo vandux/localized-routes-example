@@ -1,0 +1,14 @@
+ko:
+  pages:
+    root:
+      title: "안녕하세요 세계"
+      body: "Ruby on Rails의 국제화 구현에 대한 빠른 데모입니다."
+    one:
+      title: "1페이지"
+      body: "재빠른 갈색 여우가 게으른 개를 뛰어 넘습니다."
+    two:
+      title: "2페이지"
+      body: "다섯 다스의 술병으로 내 상자를 포장하십시오."
+    three:
+      title: "3페이지"
+      body: "Jim은 아름다운 가운이 비싸다는 것을 빨리 깨달았습니다."

@@ -1,4 +1,4 @@
-es:
+es-MX:
   pages:
     root:
       title: "Hola Mundo"
@@ -12,8 +12,3 @@ es:
     three:
       title: "Página tres"
       body: "Jim rápidamente se dio cuenta de que los hermosos vestidos son caros."
-
-es-MX:
-  pages:
-    root:
-      title: "Hola Mundo viva Mexico"

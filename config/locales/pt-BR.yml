@@ -1,0 +1,14 @@
+pt-BR:
+  pages:
+    root:
+      title: "Olá Mundo"
+      body: "Uma demonstração rápida de implementação de internacionalização em Ruby on Rails."
+    one:
+      title: "Página um"
+      body: "Uma rápida raposa marrom salta sobre o cão preguiçoso."
+    two:
+      title: "Página Dois"
+      body: "Embale minha caixa com cinco dúzias de jarros de bebida."
+    three:
+      title: "Página Três"
+      body: "Jim percebeu rapidamente que os lindos vestidos são caros."
